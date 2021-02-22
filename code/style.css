@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#slogan {
+    position: relative;
+    right: 300px;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    background-color: black;
+    list-style: none;
+    height: 60px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+a {
+    color: white;
+}
+
+.columns {
+    justify-content: space-between;
+    display: flex;
+}
+
+#leftcol {
+    float: left;
+    width: 66%;
+}
+
+#rightcol {
+    float: right;
+    background-color: rgb(224, 219, 219);
+    width: 33%;
+    height: auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    position: relative;
+    right: 200px;
+}
+
+table th {
+    padding: 5px 20px;
+}
+
+table td {
+    padding: 5px 20px;
+}
