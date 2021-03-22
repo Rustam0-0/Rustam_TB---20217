@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contrôler</title>
+</head>
+
+<body>
+    <p>Saisissez un texte puis pressez le bouton 'Contrôler'</p>
+    <input type='text' />
+    <button>Contrôler</button>
+    <br><br>
+
+    <script>
+        const input = document.querySelector('input')
+        const button = document.querySelector('button')
+        const handleClick = () => {
+            const value = input.value.trim()
+            alert(`Vous avez saisi '${value}'`)
+        }
+        button.addEventListener('click', handleClick)
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Magic</title>
+</head>
+
+<body>
+
+    <p>Entrez votre proposition</p>
+    <input type='number' />
+    <button onclick="verif()">Verifier</button>
+    <br><br>
+
+    <!-- Une autre façon: on peut taper 'Entrée', magicNumber va changer chaque fois -->
+    <!-- <form onsubmit="verif()">
+        <input type="number" value="number">
+        <input type="submit" value="Verifier">
+    </form> -->
+
+    <script>
+        let magicNumber = Math.floor(Math.random() * 100)
+        console.log(magicNumber)
+
+        const input = document.querySelector('input')
+        const button = document.querySelector('button')
+        const verif = () => {
+
+            const value = input.value
+
+            if (value == magicNumber) {
+                alert('YES')
+            } else if (value < magicNumber) {
+                alert('trop peti')
+            } else if (value > magicNumber) {
+                alert('trop grand')
+            }
+        }
+    </script>
+
+</body>
+
+</html>
