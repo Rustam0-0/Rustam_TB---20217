@@ -70,7 +70,7 @@
                     <td bgcolor="#FFCC66"><img src="img/<?php echo $row['pro_id']; ?>.jpg" width="90" height="90" alt="<?php echo $row['pro_id']; ?>.jpg"></td>
                     <td bgcolor="#CCCCFF"><?php echo $row['pro_id']; ?></td>
                     <td bgcolor="#CCCCFF"><?php echo $row['pro_ref']; ?></td>
-                    <td bgcolor="#FFCC66"><a class="link" href="reference.php"><?php echo $row['pro_libelle']; ?></a></td>
+                    <td bgcolor="#FFCC66"><a class="link" href="reference.php?id=<?php echo $row['pro_id']?>"><?php echo $row['pro_libelle']; ?></a></td>
                     <td bgcolor="#CCCCFF"><?php echo $row['pro_prix']; ?></td>
                     <td bgcolor="#CCCCFF"><?php echo $row['pro_stock']; ?></td>
                     <td bgcolor="#CCCCFF"><?php echo $row['pro_couleur']; ?></td>

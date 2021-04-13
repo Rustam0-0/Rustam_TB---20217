@@ -49,7 +49,7 @@
 
         <h1>Vos coordonnées</h1>
 
-        <form action="script.php" method="POST">
+        <form action="" method="POST">
 
             <div class="form-group">
                 <label for="inputNom">Nom*</label>
@@ -120,9 +120,14 @@
                 <input type="checkbox" name="accepte" value="accepte">*J'accepte le traitement informatique de ce formulaire
             </div>
 
-            <button type="submit" class="btn btn-dark" value="send">Envoyer</button>
-            <button type="reset" class="btn btn-dark">Annuler</button>
+            <div class="justify-content-between">
+                <button type="submit" class="btn btn-dark" value="send">Envoyer</button>
+                <button type="reset" class="btn btn-dark">Annuler</button>
+                <div class="col-lg-4 col-sm-12" style="background-color: rgb(250, 178, 9)"><?php require_once 'script.php'; ?></div>
+                
+            </div>
 
+   
         </form><br>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">

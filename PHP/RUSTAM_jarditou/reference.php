@@ -9,8 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>page référence</title>
-
-    
 </head>
 
 <body>
@@ -54,7 +52,7 @@
         <?php require_once 'script.php'; ?>
         <?php
         $mysqli = new mysqli('localhost','root','','jarditou') or die(mysqli_error($mysqli));
-        $result = $mysqli->query("SELECT * FROM produits JOIN categories ON categories.cat_id=produits.pro_cat_id LIMIT 1") or die($mysqli->error);
+        $result = $mysqli->query("SELECT * FROM produits JOIN categories ON categories.cat_id=produits.pro_cat_id WHERE pro_id=".$_GET['id']." LIMIT 1") or die($mysqli->error);
         ?>
             <?php $row = $result->fetch_assoc() ?>
 
@@ -125,7 +123,6 @@
                 </div>
         </form><br>
 
-        
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -139,13 +136,7 @@
             </ul>
         </nav>
         
-
     </div>
-
-    <!-- </div> -->
-           
-            
-    <!-- </div> -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
